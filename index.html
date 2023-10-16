@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TubeRanker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .textwitdh{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Start  -->
+    <div class="navbar-strt">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#"><img class="logo" src="logo.png" width="50px" alt=""/><span class="fs-2 fw-bold"><i class="ms-1">YT Description Tool</i></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-5 ps-5">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #CD201F;" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #CD201F;" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #CD201F;" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #CD201F;" href="#">Disclaimer </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #CD201F;" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #CD201F;" href="#">Terms & condition</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
+
+    
+    <!-- Content Start  -->
+    <div class="container main  mt-5 pt-5">
+        <div class="main content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="">YouTube Video Description Generator Tool</h1>
+                            <h2 class="mt-3">Suggested Information</h2>
+                        </div>
+                    </div>
+                    <div class="main-content">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h6 style="color: #CD201F;">About The Video</h6>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-2">
+                                            <!-- <input type="checkbox"  class="form-check-input" style="background-color: #CD201F;" checked> -->
+                                            <div class="form-check form-switch ms-3">
+                                                <input class="form-check-input" id="checkbox1" name="checkbox1" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="background-color: #CD201F; font-size: 1.4rem;" checked>
+                                              </div>
+                                    </div>
+                                    <p class="me-3 text-justify">Detailed explanation of what the video is about, including important
+                                        keywords.
+                                    </p>
+                                </div>
+                                <div class="textarea">
+                                    <textarea name="detail" id="detail" cols="65" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h6 style="color: #CD201F;">Timestamps</h6>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-2">
+                                        <div class="form-check form-switch ms-3">
+                                            <input class="form-check-input" id="checkbox2" name="checkbox2" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="background-color: #CD201F; font-size: 1.4rem;" checked>
+                                          </div>
+                                    </div>
+                                    <p class="text-justify">A breakdown of the main sections of your video by time.
+                                        Similar to a ‘Table of Contents’ Ideally these should actually be links to the specific time section of the video as well.</p>
+                                </div>
+                                <div class="textarea">
+                                    <textarea name="timestamp" id="timestamp" cols="65" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h6 style="color: #CD201F;">About The Channel</h6>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-2">
+                                        <div class="form-check form-switch ms-3">
+                                            <input class="form-check-input" id="checkbox3" name="checkbox3" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="background-color: #CD201F; font-size: 1.4rem;" checked>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="textarie mt-3">
+                                    <textarea name="about" id="about" cols="65" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h6 style="color: #CD201F;">Other Recommended Videos / Playlists</h6>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-2">
+                                        <div class="form-check form-switch ms-3">
+                                            <input class="form-check-input" id="checkbox4" name="checkbox4" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="background-color: #CD201F; font-size: 1.4rem;" checked>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="textarie mt-3">
+                                    <textarea name="recommend" id="recommend" cols="65" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h6 style="color: #CD201F;">About Our Products & Company</h6>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-2">
+                                        <div class="form-check form-switch ms-3">
+                                            <input class="form-check-input" name="checkbox5" id="checkbox5" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="background-color: #CD201F; font-size: 1.4rem;" checked>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="textarie mt-3">
+                                    <textarea name="product" id="product" cols="65" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h6 style="color: #CD201F;">Our Website</h6>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-2">
+                                        <div class="form-check form-switch ms-3">
+                                            <input class="form-check-input" id="checkbox6" name="checkbox6" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="background-color: #CD201F; font-size: 1.4rem;" checked>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="textarie mt-3">
+                                    <textarea name="website" id="website" cols="65" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h6 style="color: #CD201F;">Contact & Social</h6>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-2">
+                                        <div class="form-check form-switch ms-3">
+                                            <input class="form-check-input" id="checkbox7" name="checkbox7" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="background-color: #CD201F; font-size: 1.4rem;" checked>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="textarie mt-3">
+                                    <textarea name="contact" id="contact" cols="65" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-6">
+                                <h2>Keywords to Target (Optional)</h2>
+                                <p>Optionally, enter important keywords that you would like this video to rank for. It
+                                    is useful
+                                    to
+                                    include these keywords several times in your description text in order.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <h6 style="color: #CD201F;">Keyword 1</h6>
+                                    <input type="text" class="form-control" placeholder="Enter Keyword 1" id="keyword1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6 style="color: #CD201F;">Keyword 2</h6>
+                                    <input type="text" class="form-control" placeholder="Enter Keyword 2" id="keyword2">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6 style="color: #CD201F;">Keyword 3</h6>
+                                    <input type="text" class="form-control" placeholder="Enter Keyword 3" id="keyword3">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn" id="generate" style="background-color: #CD201F; color: white;">Generate Description</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-sm-12"><h3 id="description-heading" style="color: #CD201F;">Generated Description text</h3></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <textarea name="result" id="result" cols="65" rows="10" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <span id="error" style="font-weight: 600; color: navy;"></span>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm-6">
+                                    <h5 id="totalWord" style="color: #CD201F;"></h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 id="totalCharacter" style="color: #CD201F;"></h5>
+                                </div>
+                            </div>
+                            <div class="row mt-3 text-center">
+                                <div class="col-sm-4">
+                                    <h5 id="key1"></h5>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 id="key2"></h5>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 id="key3"></h5>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn" style="background-color: #CD201F; color: white;" id="copyBtn">Copy To Clipboard</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <p class="textwitdh mt-5">Did you know that YouTube is the 2nd largest social media channel in the world
+            (after
+            Facebook) so rather than
+            just dumping your videos on there and forgetting about it, you should be taking advantage of its huge
+            active
+            user base together with its prominence in a search context - not just on YouTube itself but in Google
+            search
+            too.</p>
+
+        <h2 class="mt-4">What is a YouTube audit?</h2>
+
+        <p class="textwitdh mt-3 text-justify">
+            A YouTube audit is designed to give you an objective in-depth overview of the performance of your
+            YouTube channel and videos. This is a great place to start for people who want to leverage YouTube but …
+            don’t know where to start.
+        </p>
+
+        <blockquote class="text-center mt-5">
+            <p>Performing a YouTube audit will give you clear action points and help you focus on fixing any glaring
+                issues while baselining your performance.</p>
+        </blockquote>
+
+        <p class="textwitdh">A baseline is really about drawing a line in the sand. Once you have a baseline you’ll
+            have a good idea of how many views are average per video, you’ll know average engagements, view lengths
+            and other key stats.</p>
+
+        <h2 class="mt-4">Why audit your YouTube Channel?</h2>
+
+        <p class="textwitdh">A YouTube audit would most likely precede a YouTube strategy. This is especially
+            important if you’re working with a client or stakeholder and need data to inform your strategy.</p>
+
+        <p class="textwitdh">Without data, your strategy is based on intuition and opinion - which is fine but
+            leaves you open to disagreement with other stakeholders. By basing your strategy on data insights,
+            you’ll have a strong objective foundation that backs up your strategy.</p>
+
+        <p class="textwitdh">It’s common for agencies or brand managers to audit their YouTube channels annually or
+            half-yearly.
+            Agencies can use the audit to track progress of KPIs and communicate to their client about how
+            successful their strategy has been.</p>
+
+        <p class="textwitdh">YouTube audits are also a great idea for finding things to fix or optimize. Especially
+            if several people
+            access your YouTube Studio account, it can be hard to determine who’s in charge of what and if anything
+            has fallen through the cracks. An audit can reset everything and paint an accurate picture of where
+            performance currently stands and what elements need urgent attention (for example: missing Tags on
+            videos, non-optimized video descriptions or inconsistent use of video HashTags).</p>
+
+        <h2 class="mt-4">What does a YouTube Audit contain?</h2>
+        <p class="textwitdh mt-4">The two components of a YouTube Audit are:</p>
+        <h2 class="mt-4">1. YouTube Channel Audit</h2>
+
+        <p class="textwitdh">This involves systematically going through all the Channel details in YouTube Studio
+            and analyzing each of these sections:</p>
+        <p class="textwitdh">
+            <strong>Channel layout, spotlight videos and featured sections:</strong>
+            these options enable you to set up your channel visually based on the videos and playlists you currently
+            have. Your current channel layout might not be the most optimal if it hasn’t been assessed for many
+            months.
+        </p>
+        <p class="image col-md-3"><img src="./fullhd-youtube-channel-layout.png" alt="" width="400px"></p>
+        <p class="textwitdh mt-4"><strong>Branding:</strong>
+            customizing your profile picture, banner image and watermark will ensure your brand displays
+            consistently across your channel and videos:
+        </p>
+        <p class="mt-4"><img src="/fullhd-youtube-channel-branding.png" alt="" width="400px"></p>
+
+        <p class="textwitdh"><strong>Basic info:</strong>this section let’s you customize the channel name,
+            description, banner links
+            and contact email address:</p>
+
+        <p><img src="./fullhd-youtube-channel3-basic-info.png" alt="" width="400px"></p>
+        <p class="textwitdh mt-4">YouTube let's you link to all your other social media channels and also let's you
+            add
+            non-social links like your website, blog or other pages. These channel links are prominent at the top of
+            your YouTube channel so use them to help drive traffic to your other online destinations.</p>
+        <h2 class="mt-4">2. YouTube Video Audit</h2>
+
+        <p class="textwitdh mt-5">The next obvious task is to audit your actual videos. Thankfully, YouTube’s
+            Analytics
+            tab shows great insights at an aggregate (across all videos) and let’s you drill into each video
+            individually to see specific stats.</p>
+        <p><img src="./fullhd4-youtube-analytics.png" alt="" width="400px"></p>
+        <p class="textwitdh mt-4">You should pay close attention to the following metrics:</p>
+
+        <p class="textwitdh mt-4"><strong>Views:</strong>
+            this is the most important YouTube metric. It refers to the total number of video views as determined by
+            YouTube. Keep in mind, a ‘view’ is variable on YouTube. Unlike Facebook and Instagram which counts a
+            view once someone has seen a video for at least 3-seconds. YouTube doesn’t work like this and instead
+            counts views dynamically based on a number of criteria including video length, session details, user
+            behavior, device and several other aspects.</p>
+        <p class="textwitdh mt-3"><strong>Engagement:</strong>
+            this is a group of metrics encompassing a number of very interesting aspects: such as overall watch
+            time, average view duration on each video, the percentage of people still watching at 0:30 and video
+            interactions such as likes, comments & shares. All these metrics shed light on how engaging the content
+            is and whether viewers are sticking around or bouncing straight off.</p>
+
+        <p class="textwitdh mt-4"><strong>Subscribers:</strong>
+            this is a unique metric to YouTube but it’s effectively the same concept as Followers on a social
+            channel like Instagram or Twitter. Gaining subscribers is important if your views come from YouTube
+            itself. A channel with lots of subscribers has built-in viewership when you publish a new video. Now
+            that YouTube is very Feed orientated, it's in your best interests to encourage viewers to subscribe so
+            they are more likely to see future videos in the Feed.</p>
+        <p class="textwitdh"><strong>Traffic sources:</strong>
+            this metric breaks down where your viewers are watching your videos. The most likely places are on
+            YouTube itself (website and app) after performing a search but there are several other places too such
+            as the video embedded on a website, watching the video on a Smart TV or PVR or having the video be
+            recommended in the Home or Explore tabs.</p>
+        <h2 class="mt-4">What does the YouTube Audit Tool check?</h2>
+        <p class="textwitdh mt-4">The YouTube Audit Tool performs the following checks:</p>
+        <p class="textwitdh mt-4">Channel checks:</p>
+        <ul>
+            <li style="list-style-type:disc">Name</li>
+            <li style="list-style-type:disc">Description</li>
+            <li style="list-style-type:disc">Branding</li>
+            <li style="list-style-type:disc">Subscribers</li>
+        </ul>
+        <p class="textwitdh mt-4">Video checks:</p>
+        <ul>
+            <li style="list-style-type:disc">Video Views</li>
+            <li style="list-style-type:disc">Total Watch Time</li>
+            <li style="list-style-type:disc">Average Watch Time Per Video</li>
+            <li style="list-style-type:disc">Average Percentage of People Watching at 0:30</li>
+            <li style="list-style-type:disc">Video Likes</li>
+            <li style="list-style-type:disc">Video Dislikes</li>
+            <li style="list-style-type:disc">Video Comments</li>
+            <li style="list-style-type:disc">Video Shares</li>
+            <li style="list-style-type:disc">Clicks on Description Links</li>
+        </ul>
+        <p class="mt-3"><img src="./fullhd5-youtube-channel-audit.png" alt="" width="300px"></p>
+
+        <h2 class="mt-3">6 Tips for General YouTube Channel best practices</h2>
+        <p class="textwitdh mt-4">We recommend the following YouTube Channel best practices:</p>
+        <h2 class="mt-4">1. Complete your channel profile</h2>
+        <p class="textwitdh mt-4">This is step 1 and once you’ve this done, you can focus on optimizing your videos
+            accordingly. Make sure you complete all the channel details fields and use relevant keywords in your
+            channel description.</p>
+        <h2 class="mt-4">2. Focus on the first few seconds</h2>
+        <p class="textwitdh mt-4">It’s common for marketers to ask how long they should make their videos, 1-minute,
+            3-minutes, 10-minutes… when you look at top-performing videos, there’s no clear pattern or trend with
+            video durations. Instead, these videos create interest and capture attention in the first few seconds.
+            If you can hook the viewer in, it’s really irrelevant how long your video is. Don’t waste time with long
+            introductions or establishing shots - instead focus on generating as much interest as possible in the
+            first few seconds.</p>
+        <h2 class="mt-3">3. Master the art of video titles, descriptions and thumbnails</h2>
+        <p class="textwitdh mt-4 text-underline"><strong style="color: #CD201F;">Video titles, video descriptions
+            </strong>
+            and thumbnail images are the 3 key signals used in video SEO. Although there are several others, these 3
+            play a big role in determining not only the ranking position but how successful they are in terms of
+            click-through rate.
+        </p>
+        <p class="textwitdh mt-4">Video titles need to sell the full value of the video in a single line. This is no
+            easy task but this
+            line needs to be as enticing as possible. The video thumbnail is used in conjunction with the video
+            titles by users to choose your video over other videos they see in search results. Video thumbnails that
+            feature a person or show a key visual are best.</p>
+        <p class="textwitdh mt-4">Video descriptions aren’t a factor for a user choosing to watch your video in
+            search results but they
+            play a big role in the position of your search rankings. Make sure you use long, descriptive video
+            descriptions using all your target keywords.</p>
+        <h2 class="mt-3">4. Be single-minded</h2>
+
+        <p class="textwitdh mt-4">YouTube videos gain prominence in search results when they are about 1 topic or
+            theme.
+            This is usually because of a keyword match between the user’s search term and a combination of that
+            keyword appearing in the video title, description, tags and/or hashtags.</p>
+        <h2 class="mt-3">5. Post at least 1 new video per week</h2>
+
+        <p class="textwitdh mt-4">Consistency is key on most social channels, especially YouTube. If you can
+            cultivate
+            habitual viewing behavior you can ride the views like a wave by releasing new videos (at least 1 per
+            week). If users watch your previous videos, they are more likely to see your future videos in their
+            Feed. If you can also encourage them to interact with your videos and/or subscribe to your channel, this
+            will greatly increase your visibility.</p>
+        <h2 class="mt-3">6. Stay across trends</h2>
+        <p class="textwitdh mt-4">Keep your eye on viewer trends - especially those outside of your industry/topic.
+            These can be great for inspiring what you do. YouTube write about the latest trends on their blog
+            <strong style="color: #CD201F;">Culture & Trends</strong> and you can always see what’s currently trending
+            from YouTube's <strong style="color: #CD201F;">Trending</strong> tab.
+        </p>
+    </div>
+    </div>
+    </div>
+
+    <style>
+        .footer{
+            background-color: #111;
+            color: white;
+            border-top: 5px solid #CD201F;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        #logo{
+            filter: invert(100%);
+        }
+        .footer a{
+            text-decoration: none;
+            color: white;
+        }
+        .copyrights{
+            background-color: black;
+        }
+    </style>
+    <!-- footer start -->
+     <footer class="footer">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-sm-8">
+                    <a class="navbar-brand d-flex align-items-center" href="#"><img id="logo" class="logo" src="btLogo.png" width="50px" alt=""/><span class="fs-2 fw-bold"><i class="ms-1">YT Description Tool</i></span></a>
+                    <p class="text-light mt-3" style="text-align: justify;">Looking for a way to download YouTube videos, thumbnails, channel banners, subtitles, and storyboards for free? Look no further! We offer a variety of free services that allow you to extract and download YouTube content for your own personal use.</p>
+                </div>
+                <div class="col-sm-4" style="background-color: #111;">
+                    <h6>Useful Links</h6>
+                    <div class="d-flex flex-wrap text-white">
+                        <ul class="list">
+                        <li><a class="reset-anchor text-sm" href="#">Contact US</a></li>
+                        <li><a class="reset-anchor text-sm" href="#">Resources</a></li>
+                        <li><a class="reset-anchor text-sm" href="#">About us</a></li>
+                        <li><a class="reset-anchor text-sm" href="#">Privacy Policy </a></li>
+                        <li><a class="reset-anchor text-sm" href="#">DMCA</a></li>
+                        <li><a class="reset-anchor text-sm" href="#">Terms &amp; Conditions</a></li>
+                        </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights py-4">
+            <div class="container">
+            <div class="row text-center gy-2  text-white">
+            <div class="col-sm-6 text-lg-start">
+            <p class="mb-0 mb-0 text-sm">© 2023 All rights reserved.</p>
+            </div>
+            <div class="col-sm-6 text-md-end">
+            <p class="mb-0 mb-0 text-sm">Devloped By <a class="reset-anchor text-white" href="https://www.facebook.com/profile.php?id=100010571675447">Mohammad Sahil</a>.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        <!-- <div class="container">
+             <div class="row">
+              <div class="col-md-3">
+                     <div class="logo mt-5">
+                     <a href=""></a> 
+                     <h1>TubeRanker</h1>
+                    </div>
+                     <span class="block--xs"></span>
+                </div>
+                <div class="col-md-3 col-sm-4 mt-5">
+                    <h6 class="text-uppercase ms-4">Sitemap</h6>
+                    <ul class="list">
+                        <li>
+                            <span class="mt-3">Login</span>
+                        </li>
+                        <li>
+                            <span class="mt-4">Signup</span>
+                        </li>
+                        <li>
+                            <span class="mt-4">Pricing</span>
+                        </li>
+                        <li>
+                            <span class="mt-4">Blog</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mt-5">
+                    <h6 class="text-uppercase ms-4">tool</h6>
+                    <ul class="list">
+                        <li>
+                            <span class="mt-5">Tag Generator</span>
+                        </li>
+                        <li>
+                            <span class="mt-5">Channel Audit</span>
+                        </li>
+                        <li>
+                            <span class="mt-3">Keyword Tool</span>
+                        </li>
+                        <li>
+                            <span class="mt-3">Keyword Tool</span>
+                        </li>
+                        <li>
+                            <span class="mt-3">Tag Extractor</span>
+                        </li>
+                        <li>
+                            <span class="mt-3">Hashtag Generator</span>
+                        </li>
+                        <li>
+                            <span class="mt-3">Title Generator</span>
+                        </li>
+                        <li>
+                            <span class="mt-3">Description Generator</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 mt-5">
+                    <h6 class="text-uppercase">NEWSLETTER</h6>
+                    <div class="input-group mt-4">
+                        <input type="text" class="form-control" placeholder="Email" id="demo" name="email">
+                    </div>
+                    <button type="button" class="btn btm btn-danger mt-3">Subscribe</button>
+                </div>
+            </div>
+        </div> -->
+    </footer>
+
+ <script src="script.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
